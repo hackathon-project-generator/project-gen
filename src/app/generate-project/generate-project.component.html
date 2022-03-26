@@ -1,16 +1,16 @@
-<div><button (click)="GenerateProject()">Generate Random Project</button>
-<span>The number is: </span>{{valued}}
+<div class="generateButton"><button (click)="GenerateProject()">Generate Random Project</button>
+    <span>The number is: </span>{{valued}}
 </div>
-<div>
-    <div>
-        <span class="shortDesc">Build A </span>{{project.type}}
-        <span class="shortDesc"> app that </span> {{project.tag}}
+<div class="project">
+    <div class="shortDesc">
+        <span>Build A </span>{{project.type}}
+        <span> app that </span> {{project.tag}}
     </div>
     <br>
-    <div>
-        <span class="longDesc">The Project Should </span>{{project.description}}
+    <div class="longDesc">
+        <span>The Project Should </span>{{project.description}}
     </div>
     <div>
-        <span class="longDesc">Helpful Tech Stack Documentation </span>{{project.stack}}
+        <span>Helpful Tech Stack Documentation </span>{{project.stack}}
     </div>
 </div>

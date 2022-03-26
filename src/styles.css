@@ -3,49 +3,50 @@ body {
     --bkg-color: #fff;
     --btn-txt-color: white;
     --btn-bg-color: rgb(11, 88, 160);
-  }
-  body.dark-theme {
-    --text-color: #eee;
-    --bkg-color: #252222;
-    --btn-txt-color: rgb(46, 43, 43);
-    --btn-bg-color: rgb(20, 211, 195);
-  }
-  
-  body {
-    background: var(--bkg-color);
-    margin: 2em;
-  }
+}
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #252222;
+  --btn-txt-color: rgb(46, 43, 43);
+  --btn-bg-color: rgb(20, 211, 195);
+}
 
-  body, input[type="text"], button {
-    color: #333;
-    font-family: Cambria, Georgia, serif;
-  }
+body {
+  background: var(--bkg-color);
+  margin: 2em;
+}
 
-  h1, h2, h3,
-  p {
-    color: var(--text-color);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 250%;
-  }
-  button {
-    padding: 1rem;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: var(--btn-txt-color);
-    background-color: var(--btn-bg-color);
-    margin-right: 1rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-  }
+body, input[type="text"], button {
+  color: #333;
+  font-family: Cambria, Georgia, serif;
+}
 
-  button:hover {
-    background-color: rgb(78, 78, 78);
-    color: white;
-  }
+h1, h2, h3,
+p {
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+  text-align: center;
+}
+button {
+  padding: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--btn-txt-color);
+  background-color: var(--btn-bg-color);
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
 
-  h2, h3 {
-    color: var(--text-color);
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: lighter;
-  }
+button:hover {
+  background-color: rgb(78, 78, 78);
+  color: white;
+}
+
+h2, h3 {
+  color: var(--text-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
