@@ -15,7 +15,9 @@ export class GenerateProjectComponent implements OnInit {
     stack: 'this is recommended tech stack...'
   }
   valued:number = 0;
+  isShow:boolean = false;
   GenerateProject(): void {
+    this.isShow = true;
     this.valued = Math.floor((Math.random() * 100) + 1);
   }
   constructor() { }

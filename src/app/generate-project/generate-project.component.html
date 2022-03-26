@@ -1,6 +1,9 @@
-<div class="centered">
-    <div><button (click)="GenerateProject()">Generate Random Project</button></div>
-    <div class="project">
+<div class="containerized">
+    <div class="generateButton">
+        <button (click)="GenerateProject()">Generate Random Project</button>
+        <span>The number is: </span>{{valued}}
+    </div>
+    <div class="project" *ngIf="isShow">
         <div class="shortDesc">
             <span>Build A </span>{{project.type}}
             <span> app that </span> {{project.tag}}
