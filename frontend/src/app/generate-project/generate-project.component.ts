@@ -21,13 +21,13 @@ export class GenerateProjectComponent implements OnInit {
 
   // valued:number = 0;
   isShow:boolean = false;
-  readonly ROOT_URL = 'http://localhost:8000'
+  readonly ROOT_URL = 'http://127.0.0.1:8000/project/'
 
   constructor(private http: HttpClient) { }
 
   GenerateProject(): void {
     this.isShow = true;
-    this.project = this.http.get<Project>(this.ROOT_URL+'/project/');
+    this.project = this.http.get<Project>(this.ROOT_URL);
   }
 
   ngOnInit(): void {
