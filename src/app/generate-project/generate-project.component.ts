@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./generate-project.component.css']
 })
 export class GenerateProjectComponent implements OnInit {
-
+  project_idea:string = 'This is a project idea';
   constructor() { }
 
   ngOnInit(): void {
