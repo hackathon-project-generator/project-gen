@@ -14,6 +14,10 @@ export class GenerateProjectComponent implements OnInit {
     description: 'This is a long description..',
     stack: 'this is recommended tech stack...'
   }
+  valued:number = 0;
+  GenerateProject(): void {
+    this.valued = Math.floor((Math.random() * 100) + 1);
+  }
   constructor() { }
 
   ngOnInit(): void {
