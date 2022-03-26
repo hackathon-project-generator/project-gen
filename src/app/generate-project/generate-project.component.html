@@ -1,16 +1,16 @@
 <div class="centered">
     <button (click)="GenerateProject()">Generate Random Project</button>
-    <div class="project" *ngIf="isShow">
+    <div class="project" *ngIf="isShow" | async>
         <div class="shortDesc">
-            <span>Build A </span>{{project.type}}
-            <span> app that </span> {{project.tag}}
+            <span>Build A </span>{{project}}
+            <span> app that </span> {{project}}
         </div>
         <br>
         <div class="longDesc">
-            <span>The Project Should </span>{{project.description}}
+            <span>The Project Should </span>{{project}}
         </div>
         <div>
-            <span>Helpful Tech Stack Documentation </span>{{project.stack}}
+            <span>Helpful Tech Stack Documentation </span>{{project}}
         </div>
     </div>
 </div>
