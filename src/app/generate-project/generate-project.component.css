@@ -1,13 +1,10 @@
 .project {
-    background-color: grey;
     color: white;
 }
-
-.containerized{
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
+.centered{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    background-color: rgb(49, 49, 49);
+    text-align: center;
 }
