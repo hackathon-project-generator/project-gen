@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'project-gen';
+  title = 'Project Generator';
+  head = 'Generate a Project'
+  toggleDarkTheme(): void {
+    document.body.classList.toggle('dark-theme');
+  }
 }
