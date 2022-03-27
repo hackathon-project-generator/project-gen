@@ -7,10 +7,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProjectService {
-  private ROOT_URL = 'http://127.0.0.1:8000/project/';
+  private ROOT_URL = 'http://localhost:4200/api';
 
-  getProject(): Observable<Project[]> {
-    return this.http.get<Project[]>(this.ROOT_URL);
+  getProject(): Observable<Project> {
+    return this.http.get<Project>(this.ROOT_URL);
   }
 
   constructor(private http: HttpClient) { }

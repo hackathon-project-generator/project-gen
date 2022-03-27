@@ -1,19 +1,16 @@
 <div class="centered">
     <button (click)="getProjects()">Generate Random Project</button>
     <div class="project" *ngIf="(isShow)">
-        <div>CLICKED</div>
-        <div *ngFor="let project of projects">
-            <div class="shortDesc">
-                <span>Build A </span>{{project.type}}
-                <span> app that </span> {{project.tag}}
-            </div>
-            <br>
-            <div class="longDesc">
-                <span>The Project Should </span>{{project.description}}
-            </div>
-            <div>
-                <span>Helpful Tech Stack Documentation </span>{{project.stack}}
-            </div>
+        <div class="shortDesc">
+            <span>Build A </span>{{projects.type}}
+            <span> app that </span> {{projects.tagline}}
+        </div>
+        <br>
+        <div class="longDesc">
+            <span>The Project Should </span>{{projects.full_desc}}
+        </div>
+        <div>
+            <span>Helpful Tech Stack Documentation </span>{{projects.stack}}
         </div>
     </div>
 </div>

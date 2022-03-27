@@ -1,6 +1,6 @@
 export interface Project {
     type: string;
-    tag: string;
-    description: string;
+    tagline: string;
     stack: string;
+    full_desc: string;
 }

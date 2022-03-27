@@ -11,7 +11,7 @@ export class GenerateProjectComponent implements OnInit {
 
   isShow:boolean = false;
 
-  projects: Project[] = [];
+  projects!: Project;
   
   constructor(private projectService: ProjectService) { }
 
