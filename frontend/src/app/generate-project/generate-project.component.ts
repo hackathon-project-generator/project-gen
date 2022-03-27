@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../project';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { ProjectService } from '../project.service';
 
 @Component({
   selector: 'app-generate-project',
@@ -10,28 +9,21 @@ import { Observable } from 'rxjs';
 })
 export class GenerateProjectComponent implements OnInit {
 
-  // project: Project = {
-  //   type: 'Web/Mobile/CommandLine',
-  //   tag: 'This is a project tag...',
-  //   description: 'This is a long description..',
-  //   stack: 'this is recommended tech stack...'
-  // }
-
-  project!: Observable<Project[]>;
-
-  // valued:number = 0;
   isShow:boolean = false;
-  readonly ROOT_URL = 'http://127.0.0.1:8000/project/'
 
-  constructor(private http: HttpClient) { }
+  projects: Project[] = [];
+  
+  constructor(private projectService: ProjectService) { }
 
-  GenerateProject(): void {
+  getProjects(): void {
     this.isShow = true;
-    this.project = this.http.get<Project[]>(this.ROOT_URL);
+    this.projectService.getProject().subscribe(projects => this.projects = projects);
   }
 
+
   ngOnInit(): void {
-    this.project.subscribe();
+    // this.project.subscribe();
+    // this.getProjects();
   }
 
 }
