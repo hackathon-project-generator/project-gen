@@ -17,7 +17,7 @@ export class GenerateProjectComponent implements OnInit {
   //   stack: 'this is recommended tech stack...'
   // }
 
-  project!: Observable<Project>;
+  project!: Observable<Project[]>;
 
   // valued:number = 0;
   isShow:boolean = false;
@@ -27,10 +27,11 @@ export class GenerateProjectComponent implements OnInit {
 
   GenerateProject(): void {
     this.isShow = true;
-    this.project = this.http.get<Project>(this.ROOT_URL);
+    this.project = this.http.get<Project[]>(this.ROOT_URL);
   }
 
   ngOnInit(): void {
+    this.project.subscribe();
   }
 
 }
